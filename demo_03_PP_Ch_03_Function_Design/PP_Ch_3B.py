@@ -482,7 +482,7 @@ def get_weekday(current_weekday: int, days_ahead: int) -> int:
     >>> get_weekday(7, 72)
     2
     """
-    return current_weekday + days_ahead % 7
+    return (current_weekday + days_ahead) % 7
  
 
 #### 5. **Test**: Verify that your function works as expected. 
